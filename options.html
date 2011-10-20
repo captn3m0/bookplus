@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BookPlus</title>
+    <meta name="author" content="Abhay Rana">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <script src="jquery.js"></script>
+    <script src="srender.js"></script>
+    <script src="md5.js"></script>
+    <script src="spin.min.js"></script>
+    <script src="main.js"></script>
+    <script src="highlight.js"></script>
+    <!--<script src="underscore-min.js"></script>-->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">BookPlus!</a>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <form class="pull-right" action="#" onsubmit="return false;">
+            <input value="116290713924645527187" id="gplus_id" size="100" class="input-small" type="text" placeholder="Google+ ID">
+            <button id="setup_btn" class="btn" type="submit">Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="span10">
+            <table>
+				<tbody id="urls">
+				</tbody>
+            </table>
+          </div>
+          <div class="span4">
+            <div id="help_1">
+				Enter Your Google+ ID<br>above
+            </div>
+            <div class="well" id="profile_container">
+				<h5>Google+ Profiles Added</h5>
+				<ul id="profiles"></ul>
+				<a href="#" id="show_all">Show All</a>
+            </div>
+            <div id="search">
+				<input id="searchtext" type="search" results="5">
+            </div>
+            <div id="spin"></div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Copyright <a href="http://captnemo.in">Abhay Rana</a> | Follow me on <a href="https://plus.google.com/116290713924645527187">Google+</a> or <a href="http://facebook.com/capt.n3m0">Facebook</a></p>
+        <p><a href="#" onclick="localStorage.clear();document.location.reload();">Reset All Data</a></p>
+      </footer>
+    </div> <!-- /container -->
+  </body>
+</html>

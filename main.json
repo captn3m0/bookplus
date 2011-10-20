@@ -1,0 +1,5 @@
+function parseString(str){
+    str=str.substring(6);
+    console.log(str);
+   
+}
